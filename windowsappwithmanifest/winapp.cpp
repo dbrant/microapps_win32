@@ -95,7 +95,7 @@ INT_PTR CALLBACK MainDlgProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM lPar
 
         HBRUSH brush = CreateSolidBrush(RGB(50, 151, 151));
         FillRect(hdc, &rect, brush);
-        DrawText(hdc, L"Foo", 3, &rect, 0);
+        DrawText(hdc, L"Test!", 5, &rect, 0);
         EndPaint(hDlg, &ps);
     }
     return TRUE;
