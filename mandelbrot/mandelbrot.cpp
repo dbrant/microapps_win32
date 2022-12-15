@@ -1,7 +1,7 @@
 /*
 Mandelbrot explorer for native Windows (32 or 64-bit), not using any runtime libraries!
 
-Copyright 2020 Dmitry Brant.
+Copyright 2022 Dmitry Brant.
 */
 
 #include "targetver.h"
@@ -61,15 +61,6 @@ bool isMouseDown;
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    MainDlgProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    ConfigDlgProc(HWND, UINT, WPARAM, LPARAM);
-
-// Insert manifest for using themed Windows components.
-#pragma comment(linker, \
-  "\"/manifestdependency:type='Win32' "\
-  "name='Microsoft.Windows.Common-Controls' "\
-  "version='6.0.0.0' "\
-  "processorArchitecture='*' "\
-  "publicKeyToken='6595b64144ccf1df' "\
-  "language='*'\"")
 
 
 // The actual entry point of the program, which will in turn call WinMain.
