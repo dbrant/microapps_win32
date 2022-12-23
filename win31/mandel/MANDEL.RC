@@ -1,0 +1,10 @@
+#include "windows.h"
+#include "mandel.h"
+
+MandelMenu MENU
+BEGIN
+    POPUP        "&Help"
+    BEGIN
+        MENUITEM "&About...", IDM_ABOUT
+    END
+END
